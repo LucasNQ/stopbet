@@ -10,7 +10,7 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen bg-white text-brand-black overflow-hidden">
-      <div className="absolute top-0 left-0 right-0 bg-brand-red text-brand-white text-center py-3 font-semibold text-sm md:text-base z-20 shadow-lg scroll-reveal">
+      <div className="absolute top-0 left-0 right-0 bg-brand-red text-brand-white text-center py-3 font-semibold text-sm md:text-base z-20 shadow-lg">
         🔥 Desconto só HOJE nessa página – {currentDate}
       </div>
 
@@ -29,23 +29,24 @@ const Hero = () => {
 
       <div className="relative z-10 container mx-auto px-4 pt-24 pb-32">
         <div className="text-center mb-8">
-          <div className="scroll-reveal">
+          <div className="">
             <img
               src="/logo-hero.png"
               alt="StopBet Logo"
               className="mx-auto h-auto w-full max-w-sm md:max-w-lg lg:max-w-lg mb-6"
-              loading="lazy"
+              loading="eager"
+              fetchPriority="high"
               decoding="async"
             />
           </div>
         </div>
 
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight scroll-reveal text-gray-900">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight text-gray-900">
             Em apenas <span className="text-brand-red">72 horas</span>, você vai APAGAR a vontade de apostar e recuperar seu controle.
           </h1>
 
-          <p className="text-xl md:text-2xl mb-10 text-gray-700 leading-relaxed scroll-reveal">
+          <p className="text-xl md:text-2xl mb-10 text-gray-700 leading-relaxed">
             Mesmo que hoje você se sinta um lixo por não conseguir parar — <span className="font-bold text-gray-900">esse protocolo vai virar o jogo.</span>
           </p>
 
