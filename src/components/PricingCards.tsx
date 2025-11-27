@@ -1,4 +1,4 @@
-import { Check, ArrowRight} from 'lucide-react';
+import { Check, ArrowRight } from 'lucide-react';
 
 const PricingCards = () => {
   const plans = [
@@ -13,7 +13,7 @@ const PricingCards = () => {
         'Exercícios para cortar o impulso',
         'Acesso imediato',
       ],
-      link: 'https://bolt.new/',
+      link: 'https://seguro.stopbet.site/1rgpSoOUsSJEiGh7R8mW',
     },
     {
       name: 'StopBet Total',
@@ -27,7 +27,7 @@ const PricingCards = () => {
         'Guia de recomeço financeiro',
         'Manual da Recaída',
       ],
-      link: 'https://lovable.dev',
+      link: 'https://seguro.stopbet.site/J56C1xky6ttQRz250Ug4',
     },
   ];
 
@@ -51,11 +51,10 @@ const PricingCards = () => {
             {plans.map((plan, index) => (
               <div
                 key={index}
-                className={`scroll-reveal relative rounded-3xl transition-all duration-300 flex flex-col h-full ${
-                  plan.popular
+                className={`scroll-reveal relative rounded-3xl transition-all duration-300 flex flex-col h-full ${plan.popular
                     ? 'bg-white text-brand-black ring-4 ring-brand-red/20 shadow-[0_20px_50px_-12px_rgba(198,40,40,0.25)] scale-100 md:scale-105 z-10 border-2 border-brand-red'
                     : 'bg-gray-50 text-brand-black border border-gray-200 shadow-xl scale-95 opacity-90 hover:opacity-100 hover:scale-100'
-                }`}
+                  }`}
               >
                 {plan.popular && (
                   <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-brand-red text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg flex items-center gap-2 whitespace-nowrap z-20">
@@ -93,9 +92,8 @@ const PricingCards = () => {
                       <div className="flex items-center justify-center gap-1 text-brand-black">
                         <span className="text-2xl font-bold mt-2">R$</span>
                         <span
-                          className={`text-6xl font-black tracking-tighter ${
-                            plan.popular ? 'text-brand-red' : 'text-brand-black'
-                          }`}
+                          className={`text-6xl font-black tracking-tighter ${plan.popular ? 'text-brand-red' : 'text-brand-black'
+                            }`}
                         >
                           {plan.price}
                         </span>
@@ -112,18 +110,16 @@ const PricingCards = () => {
                     {plan.features.map((feature, i) => (
                       <li key={i} className="flex items-start gap-3">
                         <div
-                          className={`rounded-full p-1 mt-0.5 flex-shrink-0 ${
-                            plan.popular
+                          className={`rounded-full p-1 mt-0.5 flex-shrink-0 ${plan.popular
                               ? 'bg-green-100 text-green-700'
                               : 'bg-gray-200 text-gray-600'
-                          }`}
+                            }`}
                         >
                           <Check className="w-4 h-4 stroke-[3px]" />
                         </div>
                         <span
-                          className={`text-base font-medium ${
-                            plan.popular ? 'text-gray-800' : 'text-gray-600'
-                          }`}
+                          className={`text-base font-medium ${plan.popular ? 'text-gray-800' : 'text-gray-600'
+                            }`}
                         >
                           {feature}
                         </span>
@@ -140,11 +136,10 @@ const PricingCards = () => {
                     className="block w-full"
                   >
                     <button
-                      className={`group relative h-14 w-full overflow-hidden font-boldQX text-lg rounded-xl transition-all duration-200 ease-out hover:scale-[1.02] border-none inline-flex items-center justify-center ${
-                        plan.popular
+                      className={`group relative h-14 w-full overflow-hidden font-boldQX text-lg rounded-xl transition-all duration-200 ease-out hover:scale-[1.02] border-none inline-flex items-center justify-center ${plan.popular
                           ? 'bg-red-600 text-white shadow-[0_0_30px_rgba(220,38,38,0.4)] hover:shadow-[0_0_45px_rgba(220,38,38,0.6)]'
                           : 'bg-gray-800 text-white hover:bg-gray-700 shadow-lg'
-                      }`}
+                        }`}
                     >
                       {plan.popular && (
                         <>
