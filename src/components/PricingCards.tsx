@@ -22,10 +22,11 @@ const PricingCards = () => {
       popular: true,
       description: 'A solução completa e definitiva',
       features: [
-        'Tudo do Protocolo Básico',
-        'Bônus de suporte emocional',
+        'Protocolo Completo',
+        'Acesso ao Grupo VIP',
         'Guia de recomeço financeiro',
         'Manual da Recaída',
+        'Acesso imediato',
       ],
       link: 'https://seguro.stopbet.site/J56C1xky6ttQRz250Ug4',
     },
@@ -52,8 +53,8 @@ const PricingCards = () => {
               <div
                 key={index}
                 className={`scroll-reveal relative rounded-3xl transition-all duration-300 flex flex-col h-full ${plan.popular
-                    ? 'bg-white text-brand-black ring-4 ring-brand-red/20 shadow-[0_20px_50px_-12px_rgba(198,40,40,0.25)] scale-100 md:scale-105 z-10 border-2 border-brand-red'
-                    : 'bg-gray-50 text-brand-black border border-gray-200 shadow-xl scale-95 opacity-90 hover:opacity-100 hover:scale-100'
+                  ? 'bg-white text-brand-black ring-4 ring-brand-red/20 shadow-[0_20px_50px_-12px_rgba(198,40,40,0.25)] scale-100 md:scale-105 z-10 border-2 border-brand-red'
+                  : 'bg-gray-50 text-brand-black border border-gray-200 shadow-xl scale-95 opacity-90 hover:opacity-100 hover:scale-100'
                   }`}
               >
                 {plan.popular && (
@@ -111,8 +112,8 @@ const PricingCards = () => {
                       <li key={i} className="flex items-start gap-3">
                         <div
                           className={`rounded-full p-1 mt-0.5 flex-shrink-0 ${plan.popular
-                              ? 'bg-green-100 text-green-700'
-                              : 'bg-gray-200 text-gray-600'
+                            ? 'bg-green-100 text-green-700'
+                            : 'bg-gray-200 text-gray-600'
                             }`}
                         >
                           <Check className="w-4 h-4 stroke-[3px]" />
@@ -137,8 +138,8 @@ const PricingCards = () => {
                   >
                     <button
                       className={`group relative h-14 w-full overflow-hidden font-boldQX text-lg rounded-xl transition-all duration-200 ease-out hover:scale-[1.02] border-none inline-flex items-center justify-center ${plan.popular
-                          ? 'bg-red-600 text-white shadow-[0_0_30px_rgba(220,38,38,0.4)] hover:shadow-[0_0_45px_rgba(220,38,38,0.6)]'
-                          : 'bg-gray-800 text-white hover:bg-gray-700 shadow-lg'
+                        ? 'bg-red-600 text-white shadow-[0_0_30px_rgba(220,38,38,0.4)] hover:shadow-[0_0_45px_rgba(220,38,38,0.6)]'
+                        : 'bg-gray-800 text-white hover:bg-gray-700 shadow-lg'
                         }`}
                     >
                       {plan.popular && (

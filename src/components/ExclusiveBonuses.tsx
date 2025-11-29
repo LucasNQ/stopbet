@@ -12,7 +12,7 @@ const BonusCard: React.FC<BonusCardProps> = ({ icon, price, title, description }
   return (
     <div className="bg-white border-none shadow-md hover:shadow-lg transition-shadow duration-300 rounded-2xl overflow-hidden scroll-reveal h-full flex flex-col">
       <div className="p-8 flex flex-col items-center text-center flex-grow">
-        
+
         {/* 1. Ícone com fundo para dar peso visual (O que você gostou) */}
         <div className="mb-6 flex justify-center">
           <div className="w-16 h-16 bg-red-50 text-brand-red rounded-2xl flex items-center justify-center shadow-inner">
@@ -24,7 +24,7 @@ const BonusCard: React.FC<BonusCardProps> = ({ icon, price, title, description }
         <h3 className="text-xl font-bold text-brand-black leading-tight mb-3">
           {title}
         </h3>
-        
+
         <p className="text-gray-800 text-base leading-relaxed mb-6">
           {description}
         </p>
@@ -61,7 +61,7 @@ const BonusCards: React.FC = () => {
       icon: <BookOpen />, // Removi as classes manuais w-12 h-12 para usar o padrão do card
       price: "R$59,99",
       title: "BÔNUS 2 – Guia de Recomeço Financeiro",
-      description: "Estrutura simples para organizar dívidas, parar de cavar o buraco e começar a reconquistar o que perdeu."
+      description: "Estrutura simples para organizar dívidas, parar de gastar e começar a reconquistar o que perdeu."
     },
     {
       icon: <Users />, // Removi as classes manuais w-12 h-12 para usar o padrão do card
