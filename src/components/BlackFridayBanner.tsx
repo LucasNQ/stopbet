@@ -8,7 +8,7 @@ interface BlackFridayBannerProps {
 }
 
 const BlackFridayBanner: React.FC<BlackFridayBannerProps> = ({
-  text = "BLACK FRIDAY - DESCONTO APLICADO ● ENTREGA IMEDIATA ● APROVADO POR MAIS DE 1.200 EX-APOSTADORES",
+  text = "OFERTA FIM DE ANO - DESCONTO APLICADO ● ENTREGA IMEDIATA ● APROVADO POR MAIS DE 1.200 EX-APOSTADORES",
   speed = 40,
   glowIntensity = "medium",
 }) => {
