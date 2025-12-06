@@ -1,5 +1,6 @@
 // import { Zap, Shield, Users, Download } from 'lucide-react'; //
 import BlackFridayBanner from './BlackFridayBanner';
+import VSLPlayer from './VSLPlayer';
 
 const Hero = () => {
   const currentDate = new Date().toLocaleDateString('pt-BR');
@@ -46,11 +47,13 @@ const Hero = () => {
             Em apenas <span className="text-brand-red">72 horas</span>, você vai APAGAR a vontade de apostar e recuperar seu controle.
           </h1>
 
-          <p className="text-xl md:text-2xl mb-10 text-gray-700 leading-relaxed">
+          <p className="text-xl md:text-2xl mb-8 text-gray-700 leading-relaxed">
             Mesmo que hoje você se sinta um lixo por não conseguir parar — <span className="font-bold text-gray-900">esse protocolo vai virar o jogo.</span>
           </p>
 
-          <div className="scroll-reveal">
+          <VSLPlayer />
+
+          <div className="scroll-reveal mt-8">
             <button
               onClick={scrollToCards}
               className="group relative h-14 px-12 overflow-hidden bg-red-600 hover:bg-red-500 text-white font-bold text-lg rounded-xl transition-all duration-200 ease-out hover:scale-[1.03] shadow-[0_0_30px_rgba(220,38,38,0.4)] hover:shadow-[0_0_45px_rgba(220,38,38,0.6)] border-none inline-flex items-center justify-center"
