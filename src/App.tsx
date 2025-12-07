@@ -1,27 +1,13 @@
-import Hero from './components/Hero';
-import PainPoints from './components/PainPoints';
-import BonusCards from './components/ExclusiveBonuses';
-import Testimonials from './components/Testimonials';
-import PricingCards from './components/PricingCards';
-import FAQ from './components/FAQ';
-import Footer from './components/Footer';
-import Notification from './components/Notification';
-import { useScrollReveal } from './hooks/useScrollReveal';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Upsell from './pages/Obrigado';
 
 function App() {
-  useScrollReveal();
-
   return (
-    <div className="min-h-screen bg-brand-white">
-      <Hero />
-      <PainPoints />
-      <BonusCards />
-      <Testimonials />
-      <PricingCards />
-      <FAQ />
-      <Footer />
-      <Notification />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/obrigado" element={<Upsell />} />
+    </Routes>
   );
 }
 
