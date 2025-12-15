@@ -40,11 +40,19 @@ const PricingCards = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-black text-brand-black mb-4">
+            <h2 className="text-4xl md:text-5xl font-black text-brand-black mb-1">
               Escolha seu plano
             </h2>
-            <p className="text-xl text-gray-800">
-              Investimento mínimo. Resultado máximo.
+
+            <p className="text-xl text-gray-900 mb-5">
+              Valor Simbólico.
+            </p>
+
+            {/* Efeito de Marca-Texto Vermelho */}
+            <p className="text-xl md:text-2xl inline-block relative">
+              <span className="bg-brand-red text-white px-4 py-2 rounded-lg font-bold shadow-lg transform -rotate-1 inline-block">
+                PAGAMENTO ÚNICO
+              </span>
             </p>
           </div>
 
@@ -99,7 +107,7 @@ const PricingCards = () => {
                           {plan.price}
                         </span>
                       </div>
-                      <span className="text-xs text-gray-400 font-semibold uppercase tracking-wider mt-2">
+                      <span className="text-xs text-gray-800 font-semibold uppercase tracking-wider mt-2">
                         Pagamento Único
                       </span>
                     </div>
@@ -159,7 +167,7 @@ const PricingCards = () => {
                     </button>
                   </a>
 
-                  <p className="text-center text-xs text-gray-400 font-medium mt-4 flex items-center justify-center gap-1">
+                  <p className="text-center text-xs text-gray-700 font-medium mt-4 flex items-center justify-center gap-1">
                     <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
                     Acesso liberado imediatamente
                   </p>

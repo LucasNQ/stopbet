@@ -28,7 +28,7 @@ const FAQ = () => {
     {
       question: 'Vou ter suporte se estiver difícil?',
       answer:
-        'Nos dois plano você receberá um bônus de acesso a um Grupo VIP com pessoas que também compraram o StopBet, para todos que estão enfrentando o mesmo problema se ajudarem',
+        'Após você receber o material através do whastapp de nossa equipe, é só você nos enviar uma mensagem para solicitar o acesso ao grupo VIP.',
     },
   ];
 
@@ -63,16 +63,14 @@ const FAQ = () => {
                     {faq.question}
                   </span>
                   <ChevronDown
-                    className={`w-6 h-6 text-brand-red flex-shrink-0 transition-transform duration-300 ${
-                      openIndex === index ? 'rotate-180' : ''
-                    }`}
+                    className={`w-6 h-6 text-brand-red flex-shrink-0 transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''
+                      }`}
                   />
                 </button>
 
                 <div
-                  className={`overflow-hidden transition-all duration-300 ${
-                    openIndex === index ? 'max-h-96' : 'max-h-0'
-                  }`}
+                  className={`overflow-hidden transition-all duration-300 ${openIndex === index ? 'max-h-96' : 'max-h-0'
+                    }`}
                 >
                   <div className="px-8 pb-6 text-brand-black text-lg leading-relaxed border-t border-brand-gray/20">
                     {faq.answer}
