@@ -3,7 +3,7 @@ import TestimonialSlider from './TestimonialSlider';
 
 const Testimonials = () => {
   return (
-    <section className="py-20 bg-brand-white">
+    <section className="pt-20 pb-8 bg-brand-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 scroll-reveal">
