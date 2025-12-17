@@ -18,19 +18,19 @@ const testimonials: Testimonial[] = [
   },
   {
     id: 2,
-    quote: "As frases me acertaram como um soco. Parei de fingir que era só diversão. Tô conseguindo controlar o impulso e não jogar, coisa que eu não fazia há tempo.",
+    quote: "Após seguir o Protocolo, Parei de fingir que era só diversão. Tô conseguindo controlar o impulso e não jogar, obrigado.",
     name: "Marcelo",
     avatar: "/Marcelo.webp",
   },
   {
     id: 3,
-    quote: "Achei que era só mais enrolação. Mas me vi nos textos. Tô sem apostar há 4 dias, e isso pra mim já é mais do que tudo que tentei antes.",
+    quote: "Entrei achando que era golpe ou papo de coach, confesso. Mas comecei a ler e parecia que vocês tavam dentro da minha cabeça, descrevendo minha vida. Quatro dias limpa. Só de ver meu dinheiro sobrar na conta já valeu.",
     name: "Jaqueline",
     avatar: "/Jaqueline.webp",
   },
   {
     id: 4,
-    quote: "Fiz calado. Ninguém sabe. Mas tô limpo tem uns dias e não me odeio mais por dentro. Esse negócio me ajudou a levantar sem fazer alarde.",
+    quote: "Fiz calado. Ninguém sabe. Mas tô limpo tem uns dias e não me odeio mais por dentro. Esse negócio me ajudou a levantar rapidamente.",
     name: "Helton P.",
     avatar: "/Helton.webp",
   },
@@ -159,11 +159,10 @@ const TestimonialSlider = () => {
             <button
               onClick={goPrev}
               disabled={!canGoPrev}
-              className={`hidden md:flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300 ${
-                canGoPrev
-                  ? 'bg-brand-red text-brand-white hover:bg-brand-red/90 hover:scale-110 shadow-lg'
-                  : 'bg-gray-200 text-gray-400 cursor-not-allowed'
-              }`}
+              className={`hidden md:flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300 ${canGoPrev
+                ? 'bg-brand-red text-brand-white hover:bg-brand-red/90 hover:scale-110 shadow-lg'
+                : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                }`}
               aria-label="Previous testimonial"
             >
               <ChevronLeft className="w-6 h-6" />
@@ -190,12 +189,10 @@ const TestimonialSlider = () => {
                     key={testimonial.id}
                     className="bg-brand-black/5 rounded-2xl p-8 border border-brand-gray/20"
                     style={{
-                      minWidth: `calc(${100 / visibleCount}% - ${
-                        ((visibleCount - 1) * 1.5) / visibleCount
-                      }rem)`,
-                      maxWidth: `calc(${100 / visibleCount}% - ${
-                        ((visibleCount - 1) * 1.5) / visibleCount
-                      }rem)`,
+                      minWidth: `calc(${100 / visibleCount}% - ${((visibleCount - 1) * 1.5) / visibleCount
+                        }rem)`,
+                      maxWidth: `calc(${100 / visibleCount}% - ${((visibleCount - 1) * 1.5) / visibleCount
+                        }rem)`,
                       boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
                     }}
                     whileHover={{
@@ -235,11 +232,10 @@ const TestimonialSlider = () => {
             <button
               onClick={goNext}
               disabled={!canGoNext}
-              className={`hidden md:flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300 ${
-                canGoNext
-                  ? 'bg-brand-red text-brand-white hover:bg-brand-red/90 hover:scale-110 shadow-lg'
-                  : 'bg-gray-200 text-gray-400 cursor-not-allowed'
-              }`}
+              className={`hidden md:flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300 ${canGoNext
+                ? 'bg-brand-red text-brand-white hover:bg-brand-red/90 hover:scale-110 shadow-lg'
+                : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                }`}
               aria-label="Next testimonial"
             >
               <ChevronRight className="w-6 h-6" />
@@ -251,11 +247,10 @@ const TestimonialSlider = () => {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  currentIndex === index
-                    ? 'bg-brand-red w-8'
-                    : 'bg-brand-gray/40 hover:bg-brand-gray'
-                }`}
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${currentIndex === index
+                  ? 'bg-brand-red w-8'
+                  : 'bg-brand-gray/40 hover:bg-brand-gray'
+                  }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
             ))}
