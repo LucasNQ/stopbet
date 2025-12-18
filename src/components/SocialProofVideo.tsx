@@ -18,9 +18,15 @@ const SocialProofVideo = () => {
     };
 
     return (
-        <section className="pt-0 pb-10 md:pb-20 bg-brand-white">
+        <section className="pt-16 pb-10 md:pb-20 bg-brand-white">
             <div className="container mx-auto px-4">
                 <div className="max-w-4xl mx-auto scroll-reveal">
+
+                    <div className="text-center mb-6">
+                        <p className="text-lg text-gray-800 font-medium max-w-[320px] mx-auto leading-relaxed">
+                            Depoimento que o Jhonatan nos enviou, demonstrando sua gratidão:
+                        </p>
+                    </div>
 
                     <div
                         className="relative mx-auto w-full max-w-[320px] aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl border-4 border-gray-100 bg-black cursor-pointer group"
@@ -39,7 +45,7 @@ const SocialProofVideo = () => {
                         </video>
 
                         {/* Custom Play/Pause Overlay */}
-                        <div className={`absolute inset-0 flex items-center justify-center transition-all duration-300 ${isPlaying ? 'opacity-0 group-hover:opacity-100' : 'opacity-100 bg-black/30'}`}>
+                        <div className={`absolute inset-0 flex items-center justify-center transition-all duration-300 ${isPlaying ? 'opacity-0' : 'opacity-100 bg-black/30'}`}>
                             <div className="w-16 h-16 bg-brand-red/90 text-white rounded-full flex items-center justify-center backdrop-blur-sm shadow-xl transform transition-transform duration-200 hover:scale-110">
                                 {isPlaying ? (
                                     <Pause className="w-8 h-8 fill-current" />
