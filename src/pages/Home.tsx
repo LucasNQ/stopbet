@@ -3,8 +3,10 @@ import PainPoints from '../components/PainPoints';
 import BonusCards from '../components/ExclusiveBonuses';
 import Testimonials from '../components/Testimonials';
 import SocialProofVideo from '../components/SocialProofVideo';
+import CompleteArsenal from '../components/CompleteArsenal';
 import PricingCards from '../components/PricingCards';
 import FAQ from '../components/FAQ';
+
 import Footer from '../components/Footer';
 import Notification from '../components/Notification';
 import { useScrollReveal } from '../hooks/useScrollReveal';
@@ -17,6 +19,7 @@ const Home = () => {
             <Hero />
             <PainPoints />
             <BonusCards />
+            <CompleteArsenal />
             <Testimonials />
             <SocialProofVideo />
             <PricingCards />
