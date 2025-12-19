@@ -5,7 +5,7 @@ const CompleteArsenal = () => {
     const cards = [
         {
             image: '/arsenal/stopbet-72h.webp',
-            title: 'StopBet 72h (Livro Principal)',
+            title: 'StopBet 72h (Principal)',
             description: 'O Método definitivo para sair do ciclo das apostas.',
             icon: <BookOpen className="w-6 h-6 text-brand-red" />
         },
@@ -31,7 +31,7 @@ const CompleteArsenal = () => {
 
     return (
         <section className="py-20 bg-gray-50">
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-2 md:px-4">
                 <div className="max-w-6xl mx-auto">
                     {/* Header */}
                     <div className="text-center mb-16 scroll-reveal">
@@ -44,7 +44,7 @@ const CompleteArsenal = () => {
                     </div>
 
                     {/* Cards Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-8">
                         {cards.map((card, index) => (
                             <div
                                 key={index}
@@ -60,10 +60,10 @@ const CompleteArsenal = () => {
                                     />
                                 </div>
                                 <div className="p-6 flex-1 flex flex-col">
-                                    <h3 className="text-lg font-bold text-gray-900 mb-3 leading-tight">
+                                    <h3 className="text-base md:text-lg font-bold text-gray-900 mb-3 leading-tight">
                                         {card.title}
                                     </h3>
-                                    <p className="text-sm text-gray-600 leading-relaxed font-medium">
+                                    <p className="text-xs md:text-sm text-gray-600 leading-relaxed font-medium">
                                         {card.description}
                                     </p>
                                 </div>
