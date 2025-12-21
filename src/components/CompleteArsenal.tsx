@@ -16,9 +16,9 @@ const CompleteArsenal = () => {
             icon: <AlertOctagon className="w-6 h-6 text-brand-red" />
         },
         {
-            image: '/arsenal/recomeco-financeiro.webp',
-            title: 'Guia de Recomeço Financeiro',
-            description: 'Estrutura simples para organizar dívidas, parar de gastar e começar a reconquistar o que perdeu.',
+            image: '/arsenal/quebrando-cadeias.webp',
+            title: 'Quebrando Cadeias',
+            description: 'O Guia espiritual para vencer o vício voltado para os Cristãos.',
             icon: <TrendingUp className="w-6 h-6 text-brand-red" />
         },
         {
