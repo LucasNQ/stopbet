@@ -32,7 +32,7 @@ const Hero = () => {
         <div className="text-center mb-8">
           <div className="">
             <img
-              src="/logo-hero.png"
+              src="/logo-hero.webp"
               alt="StopBet Logo"
               className="mx-auto h-auto w-full max-w-sm md:max-w-lg lg:max-w-lg mb-6"
               loading="eager"
