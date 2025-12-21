@@ -57,6 +57,8 @@ const CompleteArsenal = () => {
                                         src={card.image}
                                         alt={card.title}
                                         className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                        loading="lazy"
+                                        decoding="async"
                                     />
                                 </div>
                                 <div className="p-6 flex-1 flex flex-col">

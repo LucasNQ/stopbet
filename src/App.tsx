@@ -1,13 +1,17 @@
+import { Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Upsell from './pages/Upssel';
+
+const Home = lazy(() => import('./pages/Home'));
+const Upsell = lazy(() => import('./pages/Upssel'));
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/upssel" element={<Upsell />} />
-    </Routes>
+    <Suspense fallback={<div className="flex items-center justify-center min-h-screen bg-brand-black text-white">Carregando...</div>}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/upssel" element={<Upsell />} />
+      </Routes>
+    </Suspense>
   );
 }
 
