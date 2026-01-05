@@ -12,7 +12,7 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    quote: "Foi a primeira vez que consegui passar três dias sem jogar. Parece pouco, mas pra mim foi tudo, já estou me sentindo livre desse vontade perturbadora que eu tinha de apostar.",
+    quote: "Foi a primeira vez que consegui passar três dias sem jogar. Parece pouco, mas pra mim foi tudo, já estou me sentindo livre dessa vontade perturbadora que eu tinha de apostar.",
     name: "Rafaela S.",
     avatar: "/Rafaela.webp",
   },

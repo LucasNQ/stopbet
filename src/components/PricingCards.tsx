@@ -4,7 +4,7 @@ const PricingCards = () => {
   const plans = [
     {
       name: 'StopBet 72h',
-      price: '1,99',
+      price: '5,99',
       originalPrice: '19,90',
       popular: false,
       description: 'Para quem quer testar',
@@ -17,14 +17,14 @@ const PricingCards = () => {
     },
     {
       name: 'StopBet Total',
-      price: '7,99',
+      price: '12,99',
       originalPrice: '37,90',
       popular: true,
       description: 'A solução completa e definitiva',
       features: [
         'Protocolo Completo',
         'Acesso ao Grupo VIP',
-        'Guia de recomeço financeiro',
+        'Quebrando Cadeias',
         'Manual da Recaída',
         'Acesso imediato',
       ],
