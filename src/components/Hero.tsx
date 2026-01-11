@@ -72,7 +72,7 @@ const Hero = () => {
 
           <div className="mt-16 mb-32 scroll-reveal">
             <BlackFridayBanner
-              text="OFERTA FIM DE ANO - DESCONTO APLICADO ● ENTREGA IMEDIATA ● APROVADO POR MAIS DE 1.200 EX-APOSTADORES"
+              text="DESCONTO APLICADO ● ENTREGA IMEDIATA ● APROVADO POR MAIS DE 1.200 EX-APOSTADORES"
               speed={40}
               glowIntensity="medium"
             />
